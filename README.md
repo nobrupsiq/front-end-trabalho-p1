@@ -2,4 +2,4 @@
 
 ## Objetivo
   
-  Conectar vendedores de produtos a compradores em potêncial, em um espaço digital. 
+  Conectar vendedores de produtos a compradores em potencial, em um espaço digital. 
