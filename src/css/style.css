@@ -18,3 +18,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+:root {
+  --cor-primaria: #6639da;
+  --cor-secundaria: #fac528;
+  --background-geral: #ebebeb;
+  --background-section: #fbfbfb;
+  --sombra-padrao: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
