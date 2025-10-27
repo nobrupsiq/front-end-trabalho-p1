@@ -1,16 +1,9 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
+@import "./global.css";
 
 /* Corpo */
 body {
   background-color: #ebebeb;
   color: #333;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -36,19 +29,8 @@ main {
   align-items: center;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .logo-icon {
   width: 100px;
-}
-
-.logo h1 {
-  color: #6639da;
-  font-size: 1.3rem;
 }
 
 .header-right {
@@ -65,8 +47,7 @@ main {
   font-weight: 500;
 }
 .vendedor img {
-  color: #6639da;
-    width: 30px;
+  width: 30px;
 }
 .cart img {
   width: 24px;
@@ -74,7 +55,6 @@ main {
 
 /* Perfil */
 .perfil {
-  
   text-align: center;
   margin-top: 40px;
 }
@@ -88,10 +68,10 @@ main {
 }
 
 .avatar-wrap {
-    position: relative;
-    width: 90px;
-   height: 90px;
-   flex: 0 0 90px;
+  position: relative;
+  width: 90px;
+  height: 90px;
+  flex: 0 0 90px;
 }
 
 .perfil h2 {
@@ -117,7 +97,7 @@ main {
 .card {
   background: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   padding: 20px;
   transition: 0.2s;
   cursor: pointer;
@@ -125,7 +105,7 @@ main {
 
 .card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .icon {

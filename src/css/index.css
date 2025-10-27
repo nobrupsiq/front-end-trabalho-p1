@@ -1,0 +1,31 @@
+@import "./global.css";
+
+body {
+  background: var(--background-geral);
+}
+
+/* Header Menu */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--background-section);
+  padding: 18px 24px;
+}
+
+.logo img {
+  width: 9rem;
+}
+
+.menu-produtos-link {
+  font-weight: 600;
+}
+
+.menu ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu ul li img {
+  width: 2rem;
+}
