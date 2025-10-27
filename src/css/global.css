@@ -24,5 +24,6 @@ a {
   --cor-secundaria: #fac528;
   --background-geral: #ebebeb;
   --background-section: #fff;
+  --border: #d4d4d4;
   --sombra-padrao: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }

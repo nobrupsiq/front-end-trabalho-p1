@@ -29,3 +29,53 @@ body {
 .menu ul li img {
   width: 2rem;
 }
+
+/* Hero section */
+.hero-container-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 40px;
+}
+
+.slider {
+  position: relative;
+  overflow-x: hidden;
+  width: 900px;
+  border-radius: 20px;
+  scroll-behavior: smooth;
+}
+
+.hero-content {
+  display: flex;
+  width: fit-content;
+}
+
+.hero-content img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-container-slide button {
+  padding: 6px;
+  border-radius: 100%;
+  border: 1px solid var(--border);
+  background-color: var(--background-section);
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.hero-container-slide button img {
+  height: 40px;
+  width: 40px;
+}
+
+.slider .btn-prev {
+  left: 10px;
+}
+
+.slider .btn-next {
+  right: 10px;
+}
