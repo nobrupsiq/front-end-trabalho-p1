@@ -149,6 +149,7 @@ body {
   margin: 0 auto;
   border-radius: 8px;
   background: var(--background-section);
+  margin-top: 80px;
 }
 
 .beneficios-content {
@@ -172,6 +173,7 @@ body {
   margin: 0 auto;
   border-radius: 8px;
   background: var(--background-section);
+  margin-top: 80px;
 }
 
 .categorias-content {
@@ -198,4 +200,13 @@ body {
 
 .categorias-card:hover {
   scale: 1.02;
+}
+
+/* Footer */
+
+.footer-container {
+  text-align: center;
+  background: var(--background-section);
+  padding: 20px;
+  margin-top: 80px;
 }
