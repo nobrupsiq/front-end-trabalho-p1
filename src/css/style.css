@@ -1,5 +1,7 @@
 
 
+
+
 /* ====== RESET ====== */
 * {
   margin: 0;
@@ -50,15 +52,6 @@ body {
   font-weight: 500;
 }
 
-<<<<<<< HEAD
-:root {
-  --cor-primaria: #6639da;
-  --cor-secundaria: #fac528;
-  --background-geral: #ebebeb;
-  --background-section: #fff;
-  --border: #d4d4d4;
-  --sombra-padrao: 0px 2px 4px rgba(0, 0, 0, 0.25);
-=======
 /* ====== FORMULÁRIO ====== */
 .form-container {
   background-color: #eaeaea;
@@ -68,7 +61,6 @@ body {
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
->>>>>>> fcf7bf96ed9baefb2a137bba32100fd558f8816d
 }
 
 .form-container h1 {
@@ -143,6 +135,9 @@ body {
   bottom: 0;
   width: 100%;
 }
+
+
+
 
 
 
