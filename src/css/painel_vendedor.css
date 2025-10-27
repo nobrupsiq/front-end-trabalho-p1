@@ -33,6 +33,7 @@ body {
 main {
   max-width: 87.5rem;
   margin: 0 auto;
+  height: 70vh;
 }
 
 /* Perfil */
@@ -94,7 +95,7 @@ main {
 
 .icon {
   font-size: 1.8rem;
-  color: #5e3cd9;
+  color: var(--cor-primaria);
   margin-bottom: 10px;
 }
 
