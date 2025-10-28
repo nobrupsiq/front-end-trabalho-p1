@@ -1,0 +1,68 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excluir produto | MarketJson</title>
+
+  <!-- 🔹 Mantemos a mesma fonte e estilo geral do "adicionar_produto.html" -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- 🔸 Mudamos o nome do CSS para excluir_produto.css -->
+  <link rel="stylesheet" href="../../src/css/excluir_produto.css">
+</head>
+
+<body>
+
+  <!-- 🔹 Mesmo cabeçalho do outro arquivo -->
+  <header class="header-container">
+    <div class="logo">
+      <img src="../img/logo.png"alt="Logo MarketJson">
+      <h2>MarketJson</h2>
+    </div>
+
+    <nav class="menu">
+      <a href="#" class="menu-link">Vendedor</a>
+      <a href="#"><img src="../icons/circle_person.svg" alt="Usuário"></a>
+      <a href="#"><img src="../icons/circle_notification.svg" alt="Notificações"></a>
+      <a href="#"><img src="../icons/shopping_cart.svg" alt="Carrinho"></a>
+    </nav>
+  </header>
+
+  <!-- 🔸 Título e formulário foram adaptados -->
+  <main class="form-container">
+    <h1>Excluir produto</h1> <!-- 🔸 Mudança do título -->
+
+    <form class="produto-form">
+      <!-- 🔸 Substituímos os campos de texto por um menu de seleção -->
+      <label for="produto">Selecione o produto</label>
+      <select id="produto" name="produto">
+        <option value="">-- Escolha um produto --</option>
+        <option value="tv">Televisão</option>
+        <option value="notebook">Notebook</option>
+        <option value="celular">Celular</option>
+      </select>
+
+      <!-- 🔹 Mesmos botões, apenas texto do primeiro mudou -->
+      <div class="botoes">
+        <button class="btn amarelo" type="submit">Excluir</button> <!-- 🔸 Antes era "Adicionar" -->
+        <button class="btn roxo" type="button" onclick="history.back()">Voltar</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- 🔹 Mesmo rodapé -->
+  <footer class="footer-container">
+    <p>Copyright &copy; 2025 LTDA.</p>
+  </footer>
+
+</body>
+</html>
+
+
+
