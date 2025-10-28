@@ -166,7 +166,6 @@
       const isAdded = btn.dataset.added === 'true';
 
       if (!isAdded) {
-        // Exibe mensagem de adicionado ao carrinho
         const toast = document.createElement('div');
         toast.textContent = 'Adicionado ao carrinho!';
         Object.assign(toast.style, {
@@ -189,16 +188,13 @@
         btn.style.color = '#fff';
         btn.dataset.added = 'true';
 
-        // adiciona item na bandeja com referência ao botão original
         createTrayItem(stableId, productName, productImage, btn);
 
-        // incrementa contador se existir
         if (cartCounter) {
           const n = parseInt(cartCounter.textContent, 10) || 0;
           cartCounter.textContent = n + 1;
         }
       } else {
-        // Exibe mensagem de retirado do carrinho
         const toast = document.createElement('div');
         toast.textContent = 'Retirado do Carrinho!';
         Object.assign(toast.style, {
@@ -215,17 +211,12 @@
         });
         document.body.appendChild(toast);
         setTimeout(function() { toast.remove(); }, 1500);
-
-        // Reverte o botão ao estado original
         btn.textContent = btn.dataset.originalText;
         btn.style.background = btn.dataset.originalBg;
         btn.style.color = btn.dataset.originalColor;
         btn.dataset.added = 'false';
-
-        // remove da bandeja
         removeTrayItem(stableId);
 
-        // decrementa contador se existir (não deixa negativo)
         if (cartCounter) {
           const n = parseInt(cartCounter.textContent, 10) || 0;
           cartCounter.textContent = Math.max(0, n - 1);
@@ -247,3 +238,108 @@ if (cartToggle) {
     }
   });
 }
+
+
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.slider');
+    if (!slider) return;
+
+    const imgs = [
+      './assets/img/hero1.png',
+      './assets/img/hero2.png',
+      './assets/img/hero3.png'
+    ];
+
+    slider.style.position = 'relative';
+    slider.style.overflow = 'hidden';
+    slider.style.minHeight = slider.style.minHeight || '260px';
+
+    slider.style.border = '2px solid';
+    slider.style.borderImage = 'linear-gradient(#7B1FA2) 1';
+    slider.style.borderRadius = '8px';
+    slider.style.boxSizing = 'border-box';
+
+    const layerA = document.createElement('img');
+    const layerB = document.createElement('img');
+    [layerA, layerB].forEach(layer => {
+      Object.assign(layer.style, {
+        position: 'absolute',
+        left: '0',
+        top: '0',
+        width: '100%',
+        height: '100%',
+        objectFit: 'cover',
+        transition: 'opacity 600ms ease',
+        opacity: '0',
+        pointerEvents: 'none',
+        display: 'block',
+        borderRadius: '6px' 
+      });
+      slider.appendChild(layer);
+    });
+
+    let current = 0;
+    let visibleLayer = layerA;
+    let hiddenLayer = layerB;
+    visibleLayer.src = imgs[0];
+    visibleLayer.style.opacity = '1';
+
+    const intervalMs = 4000;
+    let timer = null;
+
+    function swapTo(index) {
+      if (index === current) return;
+      hiddenLayer.src = imgs[index];
+
+      hiddenLayer.style.opacity = '0';
+    
+      void hiddenLayer.offsetWidth;
+   
+      hiddenLayer.style.opacity = '1';
+      visibleLayer.style.opacity = '0';
+    
+      setTimeout(() => {
+        const tmp = visibleLayer;
+        visibleLayer = hiddenLayer;
+        hiddenLayer = tmp;
+        current = index;
+      }, 620);
+    }
+
+    function next() {
+      const nextIndex = (current + 1) % imgs.length;
+      swapTo(nextIndex);
+    }
+
+    function prev() {
+      const prevIndex = (current - 1 + imgs.length) % imgs.length;
+      swapTo(prevIndex);
+    }
+
+    function start() {
+      stop();
+      timer = setInterval(next, intervalMs);
+    }
+
+    function stop() {
+      if (timer) {
+        clearInterval(timer);
+        timer = null;
+      }
+    }
+
+    
+    slider.addEventListener('mouseenter', stop);
+    slider.addEventListener('mouseleave', start);
+
+
+    const btnNext = document.querySelector('.btn-next');
+    const btnPrev = document.querySelector('.btn-prev');
+    if (btnNext) btnNext.addEventListener('click', e => { e.preventDefault(); next(); start(); });
+    if (btnPrev) btnPrev.addEventListener('click', e => { e.preventDefault(); prev(); start(); });
+
+
+    start();
+  });
+})();
