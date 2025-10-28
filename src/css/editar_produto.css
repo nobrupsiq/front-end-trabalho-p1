@@ -9,19 +9,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  padding: 10px 50px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: var(--background-section);
+  padding: 18px 24px;
+  
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 
 .logo img {
-  width: 100px;
+  width: 9rem;
 }
 
 .menu {
@@ -31,7 +26,7 @@ body {
 }
 
 .menu a img {
-  width: 25px;
+  width: 2rem;
 }
 
 .menu-link {
@@ -45,12 +40,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 150px;
+  margin: 80px 0 80px 0;
 }
 
 .form-container h1 {
   font-size: 1.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -63,24 +58,34 @@ body {
 .produto-form label {
   text-align: left;
   font-weight: 500;
+  margin-bottom: 8px;
 }
 
 .produto-form input {
   width: 400px;
   padding: 10px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
+  border: 1px solid var(--cor-primaria);
+  box-shadow: var(--sombra-padrao);
+  margin-bottom: 20px;
+  border-radius: 4px;
   outline: none;
   font-size: 0.95rem;
+  transition: 0.2s;
 }
 
 .produto-form input:focus {
-  border-color: #6a0dad;
+  scale: 1.02;
 }
 
 #nome {
   width: 400px;
-  border-color: #6639da;
+  width: 400px;
+  padding: 10px;
+  border: 1px solid var(--cor-primaria);
+  box-shadow: var(--sombra-padrao);
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.95rem;
 }
 
 /* ====== BOTÕES ====== */
