@@ -15,3 +15,6 @@ cardExcluir.addEventListener("click", () => {
 cardVisualizar.addEventListener("click", () => {
   window.location.href = "visualizar_produto.html";
 });
+
+
+
