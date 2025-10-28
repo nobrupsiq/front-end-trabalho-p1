@@ -1,0 +1,129 @@
+@import "./global.css";
+
+body {
+  background: var(--background-geral);
+}
+
+/* ====== CABEÇALHO ====== */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu a img {
+  width: 25px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #6a0dad;
+  font-weight: 500;
+}
+
+/* ====== FORMULÁRIO ====== */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.form-container h1 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.produto-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.produto-form label {
+  text-align: left;
+  font-weight: 500;
+}
+
+.produto-form input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.produto-form input:focus {
+  border-color: #6a0dad;
+}
+
+#nome {
+  width: 400px;
+  border-color: #6639da;
+
+}
+
+/* ====== BOTÕES ====== */
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.btn {
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn.amarelo {
+  background-color: #f5b400;
+  color:black;
+}
+
+.btn.amarelo:hover {
+  background-color: #d49d00;
+}
+
+.btn.roxo {
+  background-color: #6a0dad;
+}
+
+.btn.roxo:hover {
+  background-color: #520c8a;
+}
+
+/* ====== RODAPÉ ====== */
+.footer-container {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #fff;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
