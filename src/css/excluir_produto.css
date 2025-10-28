@@ -1,122 +1,114 @@
+@import "../css/global.css";
 
+body {
+  background: var(--background-geral);
+}
 
-/* ====== CABEÇALHO ====== */
-
+/* Header Menu */
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  padding: 10px 50px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  background: var(--background-section);
+  padding: 18px 24px;
 }
 
 .logo img {
-  width: 100px;
+  width: 9rem;
 }
 
-.menu {
+.menu-produtos-link {
+  font-weight: 600;
+}
+
+.menu ul {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  gap: 1.5rem;
 }
 
-.menu a img {
-  width: 25px;
+.menu ul li img {
+  width: 2rem;
 }
 
-.menu-link {
-  text-decoration: none;
-  color: #6a0dad;
-  font-weight: 500;
-}
-
-/* ====== FORMULÁRIO ====== */
+/* FORMULÁRIO */
 .form-container {
-  background-color: #eaeaea;
-  margin: 60px auto;
-  padding: 40px;
-  width: 400px;
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 80px 0 80px 0;
 }
 
 .form-container h1 {
   font-size: 1.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .produto-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
 .produto-form label {
   text-align: left;
   font-weight: 500;
+  margin-bottom: 8px;
 }
-
 
 .produto-form select {
+  width: 400px;
   padding: 10px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
+  border: 1px solid var(--cor-primaria);
+  box-shadow: var(--sombra-padrao);
+  margin-bottom: 20px;
+  border-radius: 4px;
   outline: none;
   font-size: 0.95rem;
-  background-color: #fff;
-}
-
-
-.produto-form select:focus {
-  border-color: #6a0dad;
+  transition: 0.2s;
 }
 
 /* ====== BOTÕES ====== */
 
 .botoes {
   display: flex;
-  justify-content: center;
   gap: 15px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .btn {
   border: none;
   padding: 10px 25px;
-  border-radius: 8px;
-  color: #fff;
+  border-radius: 4px;
+  color: #000;
   cursor: pointer;
   font-weight: 500;
   transition: 0.3s;
 }
 
-
 .btn.amarelo {
-  background-color: #f5b400;
+  background-color: var(--cor-secundaria);
 }
 
-.btn.amarelo:hover {
-  background-color: #d49d00;
+.btn.amarelo:hover,
+.btn.amarelo:focus {
+  scale: 1.05;
+  outline: none;
+  box-shadow: var(--sombra-padrao);
 }
 
 .btn.roxo {
-  background-color: #6a0dad;
+  background-color: var(--cor-primaria);
+  color: var(--background-section);
 }
 
-.btn.roxo:hover {
-  background-color: #520c8a;
+.btn.roxo:hover,
+.btn.roxo:focus {
+  scale: 1.05;
+  outline: none;
+  box-shadow: var(--sombra-padrao);
 }
 
 /* ====== RODAPÉ ====== */
-
 .footer-container {
   text-align: center;
   padding: 15px 0;
@@ -126,6 +118,3 @@
   bottom: 0;
   width: 100%;
 }
-
-
-
