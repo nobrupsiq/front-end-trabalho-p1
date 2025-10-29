@@ -28,4 +28,85 @@
 
 body {
   background: var(--background-geral);
+  position: relative;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 80px 0 60px 0;
+}
+
+.destaques-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2.5rem;
+  gap: 20px;
+  max-width: 81.25rem;
+  margin: 0 auto;
+}
+
+.destaques-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 17.5rem;
+  box-shadow: var(--sombra-padrao);
+  font-size: 0.875rem;
+  background: var(--background-section);
+}
+
+.destaques-card img {
+  max-width: 12.5rem;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.destaques-card .produto-info .preco {
+  font-size: 20px;
+  margin: 2px;
+}
+
+.botoes-container {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.btn {
+  border: none;
+  padding: 10px 25px;
+  border-radius: 4px;
+  color: #000;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+  background: var(--cor-secundaria);
+}
+
+.btn:hover,
+.btn:focus {
+  scale: 1.02;
+  box-shadow: var(--sombra-padrao);
+}
+
+.btn-voltar {
+  background: var(--cor-primaria);
+  color: var(--background-section);
+  margin: 40px 40px 60px 40px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/* Footer */
+.footer-container {
+  text-align: center;
+  padding: 15px 0;
+  background: var(--background-section);
+  box-shadow: var(--sombra-padrao);
+  width: 100%;
 }
