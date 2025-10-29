@@ -19,7 +19,7 @@
     <a class="menu-produtos-link" href="#">Todos os produtos</a>
     <nav class="menu">
       <ul>
-        <li><a href="../screens/painel_vendedor.html"><img src="../icons/circle_person.svg" alt="Icone do usuario"></a></li>
+        <li><a href="./menu_vendedor.html"><img src="../icons/circle_person.svg" alt="Icone do usuario"></a></li>
         <li><a href="#"><img src="../icons/circle_notification.svg" alt="Icone de notificação"></a></li>
         <li><a href="#"><img src="../icons/shopping_cart.svg" alt="Icone de carrinho de compras"></a></li>
       </ul>
@@ -30,17 +30,18 @@
     <h1>Adicionar produto</h1>
 
     <form class="adicionar-produto-form">
+      <input id='produto_id' style="display: none" type="text" placeholder="ID">
       <label for="nome">Nome do produto</label>
-      <input type="text" id="nome" placeholder="Ex Televisão">
+      <input type="text" id="nome" class="nome-produto" placeholder="Ex Televisão">
 
       <label for="preco">Preço</label>
-      <input type="text" id="preco" placeholder="R$ 00,00">
+      <input type="text" id="preco" class="preco-produto" placeholder="R$ 00,00">
 
       <label for="imagem">Imagem do produto</label>
-      <input type="text" id="imagem" placeholder="Link do endereço da imagem">
+      <input type="text" id="imagem" class="imagem-produto" placeholder="Link do endereço da imagem">
 
       <div class="botoes">
-        <button class="btn amarelo" type="submit">Adicionar</button>
+        <button class="btn amarelo" id="addBtn" type="submit">Adicionar</button>
         <button class="btn roxo" type="button" onclick="history.back()">Voltar</button>
       </div>
     </form>
@@ -49,6 +50,8 @@
   <footer class="footer-container">
     <p>Copyright &copy; 2025 LTDA.</p>
   </footer>
+
+  <script src="../../src/js/adicionar_produto.js"></script>
 </body>
 
 </html>

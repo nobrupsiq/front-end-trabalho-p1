@@ -27,31 +27,34 @@
     </nav>
   </header>
 
-
   <main class="form-container">
     <h1>Editar produto</h1>
 
     <form class="editar-produto-form">
-      <label for="nome">Selecione o produto</label>
-      <input type="text" id="nome" placeholder="">
-
+      <input id='produto_id' class="edit_id" style="display: none;" type="text" placeholder="ID">
+      <select id="edit_selecionar_produto">
+        <option value="Selecionar" selected disabled>Selecionar</option>
+      </select>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" class="edit_nome" placeholder="Nome do produto">
       <label for="preco">Preço</label>
-      <input type="text" id="nome" placeholder="R$ 00,00">
+      <input type="text" id="nome" class="edit_preco" placeholder="R$ 00,00">
 
       <label for="imagem">Imagem do produto</label>
-      <input type="text" id="nome" placeholder="Link do endereço da imagem">
+      <input type="text" id="nome" class="edit_imagem" placeholder="Link do endereço da imagem">
 
       <div class="botoes">
-        <button class="btn amarelo" type="submit">Editar</button>
+        <button class="btn amarelo" id="editBtn" type="submit">Editar</button>
         <button class="btn roxo" type="button" onclick="history.back()">Voltar</button>
       </div>
     </form>
   </main>
 
-
   <footer class="footer-container">
     <p>Copyright &copy; 2025 LTDA.</p>
   </footer>
+
+  <script src="../../src/js/editar_produto.js"></script>
 </body>
 
 </html>

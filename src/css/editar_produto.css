@@ -55,6 +55,18 @@ body {
   flex-direction: column;
 }
 
+#edit_selecionar_produto {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid var(--cor-primaria);
+  box-shadow: var(--sombra-padrao);
+  margin-bottom: 20px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
 .editar-produto-form label {
   text-align: left;
   font-weight: 500;
@@ -83,7 +95,7 @@ body {
   padding: 10px;
   border: 1px solid var(--cor-primaria);
   box-shadow: var(--sombra-padrao);
-  border-radius: 8px;
+  border-radius: 4px;
   outline: none;
   font-size: 0.95rem;
 }
