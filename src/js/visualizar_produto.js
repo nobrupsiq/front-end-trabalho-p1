@@ -1,7 +1,7 @@
 const url = "https://marketjson-api.vercel.app/produtos";
 
-let lista_de_produtos = [];
-async function getProdutos() {
+export let lista_de_produtos = [];
+export async function getProdutos() {
   const response = await fetch(url);
   const produtos = await response.json();
   lista_de_produtos = produtos;
@@ -10,8 +10,9 @@ async function getProdutos() {
     ".visualizar-produto-content"
   );
 
+  if (!produtoContainer) return;
+
   let html = "";
-  produtoContainer.innerHTML = "";
   produtos.forEach((produto) => {
     html += `
       <div class="produto-card">
