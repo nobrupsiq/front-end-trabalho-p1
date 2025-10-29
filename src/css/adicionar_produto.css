@@ -44,18 +44,18 @@ body {
   margin-bottom: 40px;
 }
 
-.produto-form {
+.adicionar-produto-form {
   display: flex;
   flex-direction: column;
 }
 
-.produto-form label {
+.adicionar-produto-form label {
   text-align: left;
   font-weight: 500;
   margin-bottom: 8px;
 }
 
-.produto-form input {
+.adicionar-produto-form input {
   width: 400px;
   padding: 10px;
   border: 1px solid var(--cor-primaria);
@@ -67,7 +67,7 @@ body {
   transition: 0.2s;
 }
 
-.produto-form input:focus {
+.adicionar-produto-form input:focus {
   scale: 1.02;
 }
 

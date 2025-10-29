@@ -50,18 +50,18 @@ body {
   text-align: center;
 }
 
-.produto-form {
+.editar-produto-form {
   display: flex;
   flex-direction: column;
 }
 
-.produto-form label {
+.editar-produto-form label {
   text-align: left;
   font-weight: 500;
   margin-bottom: 8px;
 }
 
-.produto-form input {
+.editar-produto-form input {
   width: 400px;
   padding: 10px;
   border: 1px solid var(--cor-primaria);
@@ -73,7 +73,7 @@ body {
   transition: 0.2s;
 }
 
-.produto-form input:focus {
+.editar-produto-form input:focus {
   scale: 1.02;
 }
 

@@ -37,7 +37,7 @@ body {
   margin: 80px 0 60px 0;
 }
 
-.destaques-content {
+.visualizar-produto-content {
   display: flex;
   flex-wrap: wrap;
   padding: 2.5rem;
@@ -46,7 +46,7 @@ body {
   margin: 0 auto;
 }
 
-.destaques-card {
+.produto-card {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -58,14 +58,14 @@ body {
   background: var(--background-section);
 }
 
-.destaques-card img {
+.produto-card img {
   max-width: 12.5rem;
   display: block;
   margin: 0 auto;
   padding-bottom: 20px;
 }
 
-.destaques-card .produto-info .preco {
+.produto-card .produto-info .preco {
   font-size: 20px;
   margin: 2px;
 }
