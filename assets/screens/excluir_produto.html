@@ -30,15 +30,12 @@
     <h1>Excluir produto</h1>
     <form class="excluir-produto-form">
       <label for="produto">Selecione o produto</label>
-      <select id="produto" name="produto">
-        <option value="">Escolha o produto</option>
-        <option value="tv">Televisão</option>
-        <option value="notebook">Notebook</option>
-        <option value="celular">Celular</option>
+      <select id="produto" class="del-select-produto" name="produto">
+        <option value="Selecionar" selected disabled>Selecionar</option>
       </select>
 
       <div class="botoes">
-        <button class="btn amarelo" type="submit">Excluir</button>
+        <button class="btn amarelo" id="delBtn" type="submit">Excluir</button>
         <button class="btn roxo" type="button" onclick="history.back()">Voltar</button>
       </div>
     </form>
@@ -48,6 +45,7 @@
     <p>Copyright &copy; 2025 LTDA.</p>
   </footer>
 
+  <script type="module" src="../../src/js/excluir_produto.js"></script>
 </body>
 
 </html>

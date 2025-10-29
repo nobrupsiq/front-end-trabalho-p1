@@ -15,13 +15,13 @@ async function editarProduto(event) {
     imagem: document.querySelector(".edit_imagem").value,
   };
   alert("Produto editado com sucesso!");
-  fetch(url + objetoProduto.id, {
+  fetch(`${url}/${objetoProduto.id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(objetoProduto),
-  }).then(() => console.log("Produto editado"));
+  }).then(() => window.location.reload());
 }
 
 // Função para popular o select com os produtos
