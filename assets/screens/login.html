@@ -46,6 +46,13 @@
       <p>Copyright © 2025 LTDA.</p>
     </footer>
     <script src="../../src/js/login.js"></script>
+    <script>
+      const usuario = localStorage.getItem("usuarioLogado");
+      if (usuario) {
+        window.location.href = "menu_vendedor.html";
+      }
+    </script>
+
 </body>
 
 </html>

@@ -109,6 +109,30 @@ main {
   font-size: 0.85rem;
 }
 
+.btn {
+  border: none;
+  padding: 10px 25px;
+  border-radius: 4px;
+  color: #000;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-sair {
+  background: var(--cor-primaria);
+  color: var(--background-section);
+  margin: 40px 40px 60px 40px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.btn:hover,
+.btn:focus {
+  scale: 1.02;
+  box-shadow: var(--sombra-padrao);
+}
+
 /* Rodapé */
 .footer-container {
   text-align: center;

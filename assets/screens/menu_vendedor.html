@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../src/css/painel_vendedor.css">
+  <link rel="stylesheet" href="../../src/css/menu_vendedor.css">
   <title>MarketJson - Vendedor</title>
 </head>
 
@@ -62,11 +62,26 @@
     </section>
   </main>
 
+  <button class="btn btn-sair" onclick="sair_da_conta()">Sair da conta</button>
+
   <footer class="footer-container">
     <p>Copyright &copy; 2025 LTDA.</p>
   </footer>
 
   <script src="../../src/js/redirecionamento.js"></script>
+  <script src="../../src/js/login.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const usuario = localStorage.getItem("usuarioLogado");
+
+      if (usuario) {
+        console.log("Usuário logado:", usuario);
+      } else {
+        console.log("Nenhum usuário logado. Redirecionando para o login...");
+        window.location.href = "./login.html";
+      }
+    });
+  </script>
 </body>
 
 </html>
