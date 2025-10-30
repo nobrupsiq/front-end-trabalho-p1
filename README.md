@@ -9,6 +9,10 @@ O MarketJson se baseia em uma plataforma de vendas de produtos que simula o lado
 - PUT = <i>Editar</i>
 - DELETE = <i>Excluir</i>
 
+## Login do painel do vendedor
+
+> Login: vendedor | senha: 1234
+
 ## Recursos
 
 > O sistema possui recursos para cadastrar, atualizar e remover produto.
