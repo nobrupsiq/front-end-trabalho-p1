@@ -34,10 +34,6 @@ https://marketjson-api.vercel.app/produtos
 - **Frontend:** HTML, CSS
 - **Backend:** NodeJS
 
-## Pré-requisitos e Dependências
-
-Antes de executar o projeto, certifique-se de ter os seguintes itens instalados:
-
 ## Instruções de Instalação e Configuração
 
 1.  **Clonar o repositório:**
