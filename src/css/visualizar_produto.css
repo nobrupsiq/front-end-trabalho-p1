@@ -44,6 +44,7 @@ body {
   gap: 20px;
   max-width: 81.25rem;
   margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .produto-card {
@@ -59,7 +60,9 @@ body {
 }
 
 .produto-card img {
-  max-width: 12.5rem;
+  max-width: 200px;
+  height: 160px;
+  object-fit: cover;
   display: block;
   margin: 0 auto;
   padding-bottom: 20px;
