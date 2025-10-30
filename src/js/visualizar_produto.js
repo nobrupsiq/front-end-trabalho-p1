@@ -23,7 +23,7 @@ export async function getProdutos() {
           </figcaption>
         </figure>
         <div class="produto-info">
-          <p class="preco">${produto.preco}</p>
+          <p class="preco">R$ ${produto.preco}</p>
         </div>
         <div class="botoes-container">
           <button class="btn btn-editar">Editar</button>

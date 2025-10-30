@@ -31,6 +31,10 @@ body {
   position: relative;
 }
 
+main {
+  height: 80vh;
+}
+
 .titulo {
   text-align: center;
   font-size: 1.5rem;
