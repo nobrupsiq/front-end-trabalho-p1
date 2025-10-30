@@ -100,6 +100,12 @@ Antes de executar o projeto, certifique-se de ter os seguintes itens instalados:
 
 <br>
 
+## Exemplos de Uso
+
+### Página de Login
+
+O arquivo `login.html` fornece a interface de login para os usuários.
+
 ## Diretrizes para Contribuição
 
 Contribuições são bem-vindas! Veja como você pode colaborar:
